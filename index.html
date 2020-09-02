@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Путь-до-папки-со-стилями/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="bg">
+        <div class="logo"></div>
+        <div class="nav">
+          <span class="item">о нас</span>
+          <span class="separator">/</span>
+          <span class="item">предложения</span>
+          <span class="separator">/</span>
+          <span class="item">контакты</span>
+        </div>
+        <div class="socials">
+          <img class="fb" src="images/fb-icon.png" alt="">
+          <img src="images/vk-icon.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="slider">
+      <div class="owl-carousel owl-theme">
+        <div class="itemDiv">
+          <div class="container">
+            <h1 class="itemDiv_header">concert home</h1>
+            <div class="circle"></div>
+            <p class="itemDiv_p">Текст баннера может включать в себя несколько предложений.<br>Выравнивание по центру.
+              Ширина текстового блока на десктопе 850px</p>
+          </div>
+        </div>
+        <div class="itemDiv"> <div class="container">
+          <h1 class="itemDiv_header">concert HALL</h1>
+          <div class="circle"></div>
+          <p class="itemDiv_p">Текст баннера может включать в себя несколько предложений.<br>Выравнивание по центру.
+            Ширина текстового блока на десктопе 850px</p>
+        </div> </div>
+        <div class="itemDiv"> <div class="container">
+          <h1 class="itemDiv_header">Концертный зал</h1>
+          <div class="circle"></div>
+          <p class="itemDiv_p">Текст баннера может включать в себя несколько предложений.<br>Выравнивание по центру.
+            Ширина текстового блока на десктопе 850px</p>
+        </div> </div>
+
+      </div>
+      <div class="slider_line">
+        
+      </div>
+      <a class="slider_button" href="">оставить заявку</a>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true
+      });
+    });
+  </script>
+</body>
+
+</html>
