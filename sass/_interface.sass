@@ -1,3 +1,7 @@
+body
+  background-color: $main-color
+  margin: 0px
+
 .bg
   max-width: 1140px
   height: 130px
@@ -78,6 +82,18 @@
     color: $text-color
     text-decoration: none
     text-align: center
+    position: relative
+    top: -30px
+    line-height: 2
+    letter-spacing: 2.2px
+    text-transform: uppercase
+  &_line
+    width: 259px
+    height: 10px
+    opacity: 0.5
+    background-color: $main-color
+    margin-left: auto
+    margin-right: auto
 
 .itemDiv 
   border: 1px solid rgba(0,0,0,0.0)
@@ -113,20 +129,6 @@
   font-family: UniNeueRegular
   text-transform: uppercase
 
-.slider_line
-  width: 259px
-  height: 10px
-  opacity: 0.5
-  background-color: $main-color
-  margin-left: auto
-  margin-right: auto
-.slider_button
-  position: relative
-  top: -30px
-  line-height: 2
-  letter-spacing: 2.2px
-  text-transform: uppercase
-
 .owl-dot
   outline: none
 .owl-carousel
@@ -151,5 +153,28 @@
   right: 20%
   outline: none
 
-
+.textBlock
+  height: 715px
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/guitar.png")
+  color: $text-color
+  margin-top: 3px
+  padding-top: 200px
+  background-position: bottom
+  background-size: 100%
+  &_container
+    display: flex
+    justify-content: space-between
+  &_text
+    width: 696px
+    text-align: left
+    font-family: UniNeueRegular
+    &_header
+      font-size: 48px
+    &_paragraph
+      font-size: 24px
+      text-transform: none
+  &_image
+    width: 263px
+    height: 371px
+    background-image: url(../images/ch.png)
   

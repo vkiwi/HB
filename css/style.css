@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  background-color: #6bc9bd;
+  margin: 0px;
+}
+
 .bg {
   max-width: 1140px;
   height: 130px;
@@ -91,6 +96,20 @@
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+  position: relative;
+  top: -30px;
+  line-height: 2;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.slider_line {
+  width: 259px;
+  height: 10px;
+  opacity: 0.5;
+  background-color: #6bc9bd;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .itemDiv {
@@ -134,23 +153,6 @@
   text-transform: uppercase;
 }
 
-.slider_line {
-  width: 259px;
-  height: 10px;
-  opacity: 0.5;
-  background-color: #6bc9bd;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slider_button {
-  position: relative;
-  top: -30px;
-  line-height: 2;
-  letter-spacing: 2.2px;
-  text-transform: uppercase;
-}
-
 .owl-dot {
   outline: none;
 }
@@ -179,5 +181,41 @@
   position: absolute;
   right: 20%;
   outline: none;
+}
+
+.textBlock {
+  height: 715px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/guitar.png");
+  color: #ffffff;
+  margin-top: 3px;
+  padding-top: 200px;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.textBlock_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBlock_text {
+  width: 696px;
+  text-align: left;
+  font-family: UniNeueRegular;
+}
+
+.textBlock_text_header {
+  font-size: 48px;
+}
+
+.textBlock_text_paragraph {
+  font-size: 24px;
+  text-transform: none;
+}
+
+.textBlock_image {
+  width: 263px;
+  height: 371px;
+  background-image: url(../images/ch.png);
 }
 /*# sourceMappingURL=style.css.map */
