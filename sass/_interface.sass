@@ -193,7 +193,7 @@ body
     text-align: center
     padding-top: 72px
     margin-top: 0
-
+    text-transform: uppercase
 
 .ac-container
   max-width: 1140px
@@ -227,8 +227,6 @@ body
     position: absolute
     left: 50%
   
-
-
 .ac-container label
   padding: 5px 20px
   position: relative
@@ -314,7 +312,7 @@ body
 
 .ac-container
   max-width: 1140px
-  margin: 10px auto 30px auto
+  margin: 10px auto 0px auto
   &_input
     position: relative
   &_image
@@ -361,3 +359,125 @@ body
   box-shadow: 0px 0px 0px 1px #6bc9bd !important
 #ac-5:checked + .ac-container_input5
   box-shadow: 0px -1px 0px 1px #6bc9bd !important
+
+//блок оставьте заявку
+.request
+  background: url("../images/concert.png")
+  min-height: 1041px
+  margin-top: 3px
+  background-position: right bottom
+  background-size: 130%
+  color: $text-color
+  font-size: 18px
+  font-family: UniNeueRegular
+  &_header
+    padding-top: 50px
+    margin-bottom: 0px
+    padding-bottom: 30px
+  &_form
+    max-width: 552px
+    min-height: 822px
+    background-color: $background-color
+    margin-left: auto
+    margin-right: auto
+    padding-top: 42px
+    padding-left: 68px
+    padding-right: 66px
+    box-sizing: border-box
+
+.form
+  &__input, &__select
+    width: 418px
+    height: 46px
+    border: solid 1px $text-color
+    background-color: $background-color
+    padding-left: 23px
+    margin-top: 19px
+    color: $text-color
+    box-sizing: border-box
+    &Comment
+      width: 418px
+      height: 100px
+      padding-bottom: 50px
+  &__label 
+    display: block
+    font-size: 18px
+  &__button
+    background-color: transparent
+    color: $text-color
+    border: none
+    font-size: 24px
+    font-weight: 900
+    text-transform: uppercase
+    font-family: UniNeueRegular
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-top: 50px
+    position: relative
+
+    &s
+      text-align: center
+  &__line
+    position: relative
+    top: 74px
+
+.form__field 
+  margin: 10px
+  position: relative
+
+.form__area 
+  display: block
+
+.form label.error 
+  color: red
+  display: block
+  position: absolute
+  top: 100%
+  margin-top: -6px
+  left: 0
+  right: 0
+
+input.error 
+  border: 2px solid red
+
+.form__checkbox 
+  position: relative
+  overflow: hidden
+  display: block
+
+.form__checkbox-input 
+  position: absolute
+  right: 100%
+  bottom: 100%
+
+.form__checkbox-label 
+  position: relative
+  padding-left: 30px
+  display: block
+  padding-top: 2px
+  padding-bottom: 2px
+
+.form__checkbox-label::before 
+  content: ''
+  display: block
+  width: 20px
+  height: 20px
+  position: absolute
+  border: 1px solid $main-color
+  left: 0
+  top: 0
+
+.form__checkbox-label::after 
+  content: ''
+  display: block
+  width: 8px
+  height: 8px
+  background-color: $text-color
+  position: absolute
+  left: 7px
+  top: 7px
+  opacity: 0
+
+.form__checkbox-input:checked + .form__checkbox-label::after 
+  opacity: 1
