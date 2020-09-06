@@ -153,6 +153,7 @@ body
   right: 20%
   outline: none
 
+//блок текста
 .textBlock
   height: 715px
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/guitar.png")
@@ -178,3 +179,185 @@ body
     height: 371px
     background-image: url(../images/ch.png)
   
+  //блок аккордеон
+.accordion    
+  min-height: 1149px
+  background-color: $background-color
+  margin-top: 3px
+  font-family: UniNeueRegular
+  &_header
+    font-family: UniNeueRegular
+    font-size: 60px
+    font-weight: 900
+    color: $text-color
+    text-align: center
+    padding-top: 72px
+    margin-top: 0
+
+
+.ac-container
+  max-width: 1140px
+  margin: 10px auto 30px auto
+  padding-bottom: 87px
+  &_input
+    position: relative
+  &_image
+    width: 60px
+    height: 60px
+    position: absolute
+    top: 27%
+  &_text
+    position: absolute
+    top: 38%
+    left: 10%
+  &_article
+    height: auto
+  &_content
+    color: $text-color
+    font-weight: 900
+    font-family: UniNeueRegular
+    margin-top: 82px
+  &_spanLeft, &_spanRight
+    font-size: 24px
+    font-weight: 900
+    text-transform: uppercase
+  &_spanLeft
+    margin-left: 10%
+  &_spanRight
+    position: absolute
+    left: 50%
+  
+
+
+.ac-container label
+  padding: 5px 20px
+  position: relative
+  z-index: 20
+  display: block
+  height: 121px
+  cursor: pointer
+  color: #777
+  //text-shadow: 1px 1px 1px rgba(255,255,255,0.8)
+  line-height: 33px
+  font-size: 19px
+  background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea))
+  background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%)
+  background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%)
+  background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%)
+  background: linear-gradient(top, #ffffff 1%,#eaeaea 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 )
+  box-shadow: 0px -1px 0px 1px $main-color
+
+.ac-container label:hover
+  background: $background-color
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover
+  background: $background-color
+  color: $text-color
+  //text-shadow: 0px 1px 1px rgba(255,255,255, 0.6)
+  //box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3), 0px 2px 2px rgba(0,0,0,0.1)
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after
+  content: ''
+  position: absolute
+  width: 24px
+  height: 24px
+  right: 13px
+  top: 7px
+  background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center
+
+.ac-container input:checked + label:hover:after 
+  background-image: url(http://netcribe.com/example/arrow_up.png)
+
+.ac-container input
+  display: none
+
+.ac-container article
+  background: $background-color
+  margin-top: -1px
+  overflow: hidden
+  height: 0px
+  position: relative
+  z-index: 10
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+
+.ac-container input:checked ~ article 
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  box-shadow: 0px 0px 0px 1px $main-color
+  height: auto
+
+.ac-container_input5
+  box-shadow: 0px 0px 0px 1px #6bc9bd
+  &:checked
+    box-shadow: 0px -1px 0px 1px #6bc9bd
+
+.ac-container article p
+  color: #777
+  line-height: 23px
+  font-size: 14px
+  padding: 20px
+  //text-shadow: 1px 1px 1px rgba(255,255,255,0.8)
+
+.ac-container_input
+  margin-top: 2px
+
+.ac-container
+  max-width: 1140px
+  margin: 10px auto 30px auto
+  &_input
+    position: relative
+  &_image
+    width: 60px
+    height: 60px
+    position: absolute
+    top: 27%
+  &_text
+    position: absolute
+    top: 38%
+    left: 10%
+  &_article
+    height: auto
+  &_content
+    color: $text-color
+    font-weight: 900
+    font-family: UniNeueRegular
+    margin-top: 82px
+    margin-bottom: 64px
+  &_spanLeft, &_spanRight
+    font-size: 24px
+    font-weight: 900
+    text-transform: uppercase
+  &_spanLeft
+    margin-left: 10%
+  &_spanRight
+    position: absolute
+    left: 50%
+  &_spanBottom
+    display: inline-block
+    margin-top: 55px
+    margin-bottom: 57px
+  &_spanValue
+    text-transform: none
+    font-weight: 100
+    font-size: 30px
+
+.ac-button
+  margin-left: 12%
+.ac-line
+  margin-left: 10%
+
+.ac-container_input5
+  box-shadow: 0px 0px 0px 1px #6bc9bd !important
+#ac-5:checked + .ac-container_input5
+  box-shadow: 0px -1px 0px 1px #6bc9bd !important
