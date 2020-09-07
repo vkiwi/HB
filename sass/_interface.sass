@@ -12,16 +12,6 @@ body
   margin-right: auto
   justify-content: space-between
 
-.bg 
-  max-width: 1140px
-  height: 130px
-  position: relative
-  display: flex
-  align-items: center
-  margin-left: auto
-  margin-right: auto
-  justify-content: space-between
-
 .container 
   width: 1140px
 
@@ -481,3 +471,48 @@ input.error
 
 .form__checkbox-input:checked + .form__checkbox-label::after 
   opacity: 1
+
+//блок контакты
+.contacts
+  min-height: 464px
+  background-color: $background-color
+  margin-top: 3px
+  &Text_header
+    text-transform: uppercase
+    color: $text-color
+    font-size: 48px
+    text-align: left
+    padding-top: 80px
+    margin-top: 0
+
+.contactsText
+  &_item
+    text-align: left
+    margin-top: 45px
+    margin-bottom: 45px
+  &_value
+    font-size: 18px
+    vertical-align: super
+    display: inline-block
+    max-width: 185px
+    color: $text-color
+    margin-left: 26px
+    &1
+      vertical-align: baseline
+
+.contactsContainer
+  display: flex
+  justify-content: space-between
+.yandexMap
+  width: 746px
+  height: 465px
+
+//футер
+.footer
+  min-height: 127px
+  background-color: $main-color
+  margin-top: -5px
+  &_copyright
+    font-style: 18px
+    color: $text-color
+    text-transform: none
