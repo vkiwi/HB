@@ -38,6 +38,14 @@ body
   box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1)
   background-color: $main-color
 
+.wrapper2
+  display: none
+  position: fixed
+  top: 0
+  background-color: $background-color
+  width: 100%
+  z-index: 999
+
 .item 
   text-transform: uppercase
   
@@ -56,11 +64,14 @@ body
 
 
 /*блок карусель */
+
+
 .slider 
   height: 850px
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/dance.png")
   color: $text-color
   text-align: center
+  text-transform: uppercase
   &_button
     font-family: UniNeueRegular
     font-size: 24px
@@ -117,7 +128,6 @@ body
   margin-right: auto
   text-align: center
   font-family: UniNeueRegular
-  text-transform: uppercase
 
 .owl-dot
   outline: none
@@ -138,10 +148,20 @@ body
   position: absolute
   left: 20%
   outline: none
+  background: url(../images/arrow-left.png) !important
+  width: 115px
+  height: 139px
+.owl-prev span
+  display: none
 .owl-next
   position: absolute
   right: 20%
   outline: none
+  background: url(../images/arrow-right.png) !important
+  width: 115px
+  height: 139px
+.owl-next span
+  display: none
 
 //блок текста
 .textBlock
@@ -200,13 +220,14 @@ body
     position: absolute
     top: 38%
     left: 10%
+    font-size: 30px
   &_article
     height: auto
   &_content
     color: $text-color
     font-weight: 900
     font-family: UniNeueRegular
-    margin-top: 82px
+    margin-top: 45px
   &_spanLeft, &_spanRight
     font-size: 24px
     font-weight: 900
@@ -320,7 +341,7 @@ body
     color: $text-color
     font-weight: 900
     font-family: UniNeueRegular
-    margin-top: 82px
+    margin-top: 45px
     margin-bottom: 64px
   &_spanLeft, &_spanRight
     font-size: 24px
@@ -390,7 +411,7 @@ body
       height: 100px
       padding-bottom: 50px
   &__label 
-    display: block
+    // display: block
     font-size: 18px
   &__button
     background-color: transparent
@@ -503,16 +524,65 @@ input.error
 .contactsContainer
   display: flex
   justify-content: space-between
-.yandexMap
-  width: 746px
-  height: 465px
+// .yandexMap
+//   width: 746px
+//   height: 465px
 
 //футер
 .footer
   min-height: 127px
   background-color: $main-color
-  margin-top: -5px
   &_copyright
     font-style: 18px
     color: $text-color
     text-transform: none
+
+
+.form__select
+  background: url(../images/arrow-bottom.png)
+  background-color: $background-color
+  background-position: right
+  background-repeat: no-repeat
+  background-size: contain
+  appearance: none
+
+.form_radio
+  display: inline
+
+.form_radio input[type=radio] 
+	display: none
+
+.form_radio label 
+	display: inline-block
+	cursor: pointer
+	position: relative
+	padding-left: 25px
+	margin-right: 0
+	line-height: 18px
+	user-select: none
+
+.form_radio label:before 
+	content: ""
+	display: inline-block
+	width: 20px
+	height: 20px
+	position: absolute
+	left: 0
+	bottom: -2px
+	background: url(../images/no.png) 0 0 no-repeat
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before 
+	background: url(../images/yes.png) 0 0 no-repeat
+
+.form__label-male
+  display: block
+  margin-bottom: -13px
+
+.form_radio-female
+  margin-left: 20px
+
+.map 
+  width: 700px
+  height: 500px
+  max-width: 100%
