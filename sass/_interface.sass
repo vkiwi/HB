@@ -23,6 +23,11 @@ body
 .fb 
   margin-right: 29px
 
+.socials img:hover
+    cursor: pointer
+    filter: invert(1)
+
+
 .nav 
   color: $text-color
   font-size: 18px
@@ -46,9 +51,14 @@ body
   width: 100%
   z-index: 999
 
+// .socials_fb
+//   background: url("../images/fb-icon2.png")
+
 .item 
   text-transform: uppercase
-  
+  &:hover
+    text-decoration: underline
+    cursor: pointer
 
 @font-face 
   font-family: 'UniNeueRegular'
@@ -84,7 +94,7 @@ body
     text-decoration: none
     text-align: center
     position: relative
-    top: -30px
+    top: -23px
     line-height: 2
     letter-spacing: 2.2px
     text-transform: uppercase
@@ -95,6 +105,17 @@ body
     background-color: $main-color
     margin-left: auto
     margin-right: auto
+    position: relative
+    top: 7px
+
+.slider_bottom
+  width: 270px
+  margin-left: auto
+  margin-right: auto
+  height: 25px
+  &:hover
+    font-size: 27px
+    transform: scale(1.5)
 
 .itemDiv 
   border: 1px solid rgba(0,0,0,0.0)

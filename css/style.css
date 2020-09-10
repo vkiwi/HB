@@ -29,6 +29,11 @@ body {
   margin-right: 29px;
 }
 
+.socials img:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+
 .nav {
   color: #ffffff;
   font-size: 18px;
@@ -58,6 +63,11 @@ body {
 
 .item {
   text-transform: uppercase;
+}
+
+.item:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @font-face {
@@ -96,7 +106,7 @@ body {
   text-decoration: none;
   text-align: center;
   position: relative;
-  top: -30px;
+  top: -23px;
   line-height: 2;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -109,6 +119,20 @@ body {
   background-color: #6bc9bd;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 7px;
+}
+
+.slider_bottom {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+}
+
+.slider_bottom:hover {
+  font-size: 27px;
+  transform: scale(1.5);
 }
 
 .itemDiv {
