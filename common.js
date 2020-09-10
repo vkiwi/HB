@@ -87,12 +87,20 @@ function init(){
 
 
 $(window).scroll(function(){
-    console.log($(this).scrollTop());
+    // console.log($(this).scrollTop());
+    var header = document.querySelector(".wrapper");
+    var fb = document.querySelector(".fb");
+    var vk = document.querySelector(".vk");
     if($(this).scrollTop()>900) {
-       $(".wrapper2").show();
+      header.classList.add("wrapper2");
+      fb.classList.add("fb2");
+      vk.classList.add("vk2");
+      } else {
+        header.classList.remove("wrapper2");
+        fb.classList.remove("fb2");
+        vk.classList.remove("vk2");
       }
-        else {$(".wrapper2").hide() ;
-      }
+      
     });
 
 

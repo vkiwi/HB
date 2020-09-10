@@ -4,6 +4,10 @@ body {
   margin: 0px;
 }
 
+header {
+  padding-bottom: 130px;
+}
+
 .bg {
   max-width: 1140px;
   height: 130px;
@@ -25,13 +29,40 @@ body {
   background-image: url(../images/logo.png);
 }
 
+.socials {
+  display: flex;
+  align-items: baseline;
+}
+
 .fb {
+  width: 15px;
+  height: 30px;
+  background-image: url("../images/fb-icon.png");
   margin-right: 29px;
 }
 
-.socials img:hover {
+.fb:hover {
+  background-image: url("../images/fb-icon_bl.png");
   cursor: pointer;
-  filter: invert(1);
+}
+
+.fb2:hover {
+  background-image: url("../images/fb-icon2.png");
+}
+
+.vk {
+  width: 35px;
+  height: 20px;
+  background-image: url("../images/vk-icon.png");
+  cursor: pointer;
+}
+
+.vk:hover {
+  background-image: url("../images/vk-icon_bl.png");
+}
+
+.vk2:hover {
+  background-image: url("../images/vk-icon2.png");
 }
 
 .nav {
@@ -47,18 +78,15 @@ body {
 }
 
 .wrapper {
-  /* position: absolute; */
+  position: fixed;
   box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1);
   background-color: #6bc9bd;
+  width: 100%;
+  z-index: 999;
 }
 
 .wrapper2 {
-  display: none;
-  position: fixed;
-  top: 0;
   background-color: #2c2c2c;
-  width: 100%;
-  z-index: 999;
 }
 
 .item {
@@ -94,7 +122,7 @@ body {
   text-transform: uppercase;
 }
 
-.slider_button {
+.slider_a {
   font-family: UniNeueRegular;
   font-size: 24px;
   font-weight: 900;
@@ -106,13 +134,15 @@ body {
   text-decoration: none;
   text-align: center;
   position: relative;
-  top: -23px;
   line-height: 2;
   letter-spacing: 2.2px;
   text-transform: uppercase;
+  z-index: 2;
 }
 
-.slider_line {
+.slider_button:after {
+  content: "";
+  display: block;
   width: 259px;
   height: 10px;
   opacity: 0.5;
@@ -120,19 +150,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 7px;
+  top: -28px;
 }
 
-.slider_bottom {
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 25px;
-}
-
-.slider_bottom:hover {
-  font-size: 27px;
-  transform: scale(1.5);
+.slider_button:hover {
+  transform: scale(1.1);
 }
 
 .itemDiv {
@@ -165,6 +187,7 @@ body {
   top: 18%;
   left: 50%;
   margin-left: -232px;
+  z-index: -1;
 }
 
 .container {
