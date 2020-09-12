@@ -23,6 +23,12 @@ header {
   width: 1140px;
 }
 
+@media (max-width: 1139px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .logo {
   width: 266px;
   height: 60px;
@@ -81,7 +87,7 @@ header {
   position: fixed;
   box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1);
   background-color: #6bc9bd;
-  width: 100%;
+  width: -webkit-fill-available;
   z-index: 999;
 }
 
@@ -388,6 +394,10 @@ header {
   left: 50%;
 }
 
+div.ac-container_button:hover {
+  background-color: #ffffff;
+}
+
 .ac-button {
   margin-left: 125px;
 }
@@ -415,17 +425,6 @@ header {
 .ac-container input:checked + label:hover {
   background: #2c2c2c;
   color: #ffffff;
-}
-
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-  background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center;
 }
 
 .ac-container input:checked + label:hover:after {
@@ -790,5 +789,66 @@ input.error {
   width: 700px;
   height: 500px;
   max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .map {
+    width: 497px;
+    margin-right: -12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+  .footer_copyright {
+    text-align: right;
+  }
+  .footer_secondSpan {
+    display: block;
+  }
+}
+
+.socials_bottom {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .socials_bottom {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .textBlock {
+    height: auto;
+    padding-top: 78px;
+    padding-bottom: 74px;
+  }
+  .itemDiv_header {
+    font-size: 72px;
+  }
+  .itemDiv_p {
+    font-size: 16px;
+    width: 79%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .owl-prev {
+    left: -4%;
+  }
+  .owl-next {
+    right: -4%;
+  }
+  .owl-nav {
+    margin-top: -90px !important;
+  }
+  .container {
+    width: 97%;
+  }
+  .nav {
+    margin-right: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

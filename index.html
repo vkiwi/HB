@@ -13,7 +13,8 @@
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
-
+  <link rel="stylesheet" href="css/burger.css">
+	<script src="burger.js"></script>
 
 </head>
 
@@ -29,6 +30,29 @@
           <span class="separator">/</span>
           <span class="item">контакты</span>
         </div>
+
+        <div class="wrapperBurger">
+          <!-- Меню гамбургер, при клике, развернутся пункты меню -->
+             <label class="menuBurger" for="menuCSS">
+             <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+               <g>
+                <title>background</title>
+                <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+               </g>
+               <g>
+                <title>Layer 1</title>
+                <path fill="#044cf1" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+               </g>
+              </svg>
+                   </label>
+             <input id="menuCSS" type="checkbox">
+             <ul class="menu clearfix">
+               <li><a class="item" href="#">О нас</a><span class="separator">/</span></li>
+               <li><a href="#">Предложения</a><span class="separator">/</span></li>
+               <li><a href="#">Контакты</a><span class="separator">/</span></li>
+          
+          </div>
+
         <div class="socials">
           <div class="fb"><a href=""></a></div>
           <div class="vk"><a href=""></a></div>
@@ -88,7 +112,7 @@
     <div class="accordion">
       <h1 class="accordion_header">Наши предложения</h1>
       <section class="ac-container">
-        <div>
+        <div class="superclass">
           <input class="ac" id="ac-1" name="accordion-1" type="checkbox" checked />
           <div class="ac-container_button"></div>
           <label class="ac-container_input" for="ac-1">
@@ -306,8 +330,12 @@
       <div class="container">
         <div class="bg">
           <div class="logo"></div>
+          <div class="socials socials_bottom">
+            <div class="fb"><a href=""></a></div>
+            <div class="vk"><a href=""></a></div>
+          </div>
           <div class="footer_copyright">
-            © 2019 Concert Home. Сайт создан в Hawking Brothers.
+            <span> © 2019 Concert Home.</span><span class="footer_secondSpan"> Сайт создан в Hawking Brothers.</span>
           </div>
         </div>
       </div>

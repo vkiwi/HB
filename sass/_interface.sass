@@ -18,6 +18,12 @@ header
 .container 
   width: 1140px
 
+@media (max-width: 1139px)
+  .container
+    width: 100%
+
+
+
 .logo 
   width: 266px
   height: 60px
@@ -64,7 +70,7 @@ header
   position: fixed
   box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1)
   background-color: $main-color
-  width: 100%
+  width: -webkit-fill-available
   z-index: 999
 
 .wrapper2
@@ -75,6 +81,9 @@ header
   &:hover
     text-decoration: underline
     cursor: pointer
+
+a.item
+  color: $text-color
 
 @font-face 
   font-family: 'UniNeueRegular'
@@ -304,7 +313,14 @@ header
   &_spanRight
     position: absolute
     left: 50%
-  
+
+//это не работает, т.к. label.ac-container_input лежит выше по z-index
+div.ac-container_button:hover
+  background-color: $text-color
+
+// .ac-container_input:hover
+//   z-index: 1
+
 .ac-button
   margin-left: 125px
   &:after
@@ -340,15 +356,15 @@ header
   //text-shadow: 0px 1px 1px rgba(255,255,255, 0.6)
   //box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3), 0px 2px 2px rgba(0,0,0,0.1)
 
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after
-  content: ''
-  position: absolute
-  width: 24px
-  height: 24px
-  right: 13px
-  top: 7px
-  background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center
+// .ac-container label:hover:after,
+// .ac-container input:checked + label:hover:after
+//   content: ''
+//   position: absolute
+//   width: 24px
+//   height: 24px
+//   right: 13px
+//   top: 7px
+//   background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center
 
 .ac-container input:checked + label:hover:after 
   background-image: url(http://netcribe.com/example/arrow_up.png)
@@ -661,3 +677,50 @@ input.error
   width: 700px
   height: 500px
   max-width: 100%
+
+@media (max-width: 1000px)
+  .map
+    width: 497px
+    margin-right: -12px
+
+
+@media (max-width: 768px)
+  .socials
+    display: none
+  .footer_copyright
+    text-align: right
+  .footer_secondSpan
+    display: block
+
+.socials_bottom
+  display: none
+
+@media (max-width: 768px)
+  .socials_bottom
+    display: flex
+
+@media (max-width: 768px)
+  .textBlock
+    height: auto
+    padding-top: 78px
+    padding-bottom: 74px
+  .itemDiv_header 
+    font-size: 72px
+  .itemDiv_p 
+    font-size: 16px
+    width: 79%
+    margin-left: auto
+    margin-right: auto
+  .owl-prev 
+    left: -4%
+  .owl-next 
+    right: -4%
+  .owl-nav 
+    margin-top: -90px !important
+  .container
+    width: 97%
+  .nav
+    margin-right: 40px
+
+@media (max-width: 700px)
+  
