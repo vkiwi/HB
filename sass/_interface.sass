@@ -62,9 +62,10 @@ header
   font-family: UniNeueBold
 
 .separator 
-  margin-right: 27px
-  margin-left: 22px
+  // margin-right: 27px
+  // margin-left: 22px
   font-family: UniNeueBlack
+  color: $text-color
 
 .wrapper 
   position: fixed
@@ -203,7 +204,7 @@ a.item
   display: none
 .owl-next
   position: absolute
-  right: 20%
+  // right: 20%
   outline: none
   background: url(../images/arrow-right.png) !important
   width: 115px
@@ -687,10 +688,16 @@ input.error
 @media (max-width: 768px)
   .socials
     display: none
+  .socialsBurger
+    display: flex
+    align-items: flex-end
+    margin-left: 21px
   .footer_copyright
     text-align: right
   .footer_secondSpan
     display: block
+
+
 
 .socials_bottom
   display: none
@@ -722,5 +729,7 @@ input.error
   .nav
     margin-right: 40px
 
-@media (max-width: 700px)
+@media (max-width: 717px)
+  .separator
+    display: none
   

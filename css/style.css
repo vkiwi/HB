@@ -78,9 +78,8 @@ header {
 }
 
 .separator {
-  margin-right: 27px;
-  margin-left: 22px;
   font-family: UniNeueBlack;
+  color: #ffffff;
 }
 
 .wrapper {
@@ -102,6 +101,10 @@ header {
 .item:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+a.item {
+  color: #ffffff;
 }
 
 @font-face {
@@ -244,7 +247,6 @@ header {
 
 .owl-next {
   position: absolute;
-  right: 20%;
   outline: none;
   background: url(../images/arrow-right.png) !important;
   width: 115px;
@@ -802,6 +804,11 @@ input.error {
   .socials {
     display: none;
   }
+  .socialsBurger {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 21px;
+  }
   .footer_copyright {
     text-align: right;
   }
@@ -849,6 +856,12 @@ input.error {
   }
   .nav {
     margin-right: 40px;
+  }
+}
+
+@media (max-width: 717px) {
+  .separator {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
