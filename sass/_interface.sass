@@ -14,6 +14,7 @@ header
   margin-left: auto
   margin-right: auto
   justify-content: space-between
+  padding-left: 20px
 
 .container 
   width: 1140px
@@ -71,11 +72,12 @@ header
   position: fixed
   box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1)
   background-color: $main-color
-  width: -webkit-fill-available
+  width: 100%
   z-index: 999
 
 .wrapper2
   background-color: $background-color
+  width: 100%
 
 .item 
   text-transform: uppercase
@@ -204,7 +206,7 @@ a.item
   display: none
 .owl-next
   position: absolute
-  // right: 20%
+  right: 20%
   outline: none
   background: url(../images/arrow-right.png) !important
   width: 115px
@@ -228,6 +230,7 @@ a.item
     width: 696px
     text-align: left
     font-family: UniNeueRegular
+    padding-left: 20px
     &_header
       font-size: 48px
     &_paragraph
@@ -237,7 +240,10 @@ a.item
     width: 263px
     height: 371px
     background-image: url(../images/ch.png)
-  
+    padding-right: 80px
+    background-position: center
+    background-repeat: no-repeat
+
   //блок аккордеон
 .accordion    
   min-height: 1149px
@@ -256,6 +262,8 @@ a.item
 
 .ac:checked + .ac-container_button:after
   display: none 
+
+
 
 .ac-container
   max-width: 1140px
@@ -298,8 +306,10 @@ a.item
     top: 38%
     left: 10%
     font-size: 30px
+    padding-left: 30px
   &_article
     height: auto
+    padding-left: 30px
   &_content
     color: $text-color
     font-weight: 900
@@ -590,6 +600,8 @@ input.error
   min-height: 464px
   background-color: $background-color
   margin-top: 3px
+  &Map
+    margin-left: 31px
   &Text_header
     text-transform: uppercase
     color: $text-color
@@ -682,7 +694,7 @@ input.error
 @media (max-width: 1000px)
   .map
     width: 497px
-    margin-right: -12px
+    margin-right: -24px
 
 
 @media (max-width: 768px)
@@ -697,7 +709,9 @@ input.error
   .footer_secondSpan
     display: block
 
-
+@media (min-width: 768px)
+  .socialsBurger
+    display: none
 
 .socials_bottom
   display: none
@@ -733,3 +747,191 @@ input.error
   .separator
     display: none
   
+@media (max-width: 768px)
+  .ac-container
+    margin-right: 20px
+    margin-left: 20px
+  .contactsText_header
+    font-size: 30px
+    width: 250px
+  .request
+    background-size: cover
+
+@media (max-width: 320px)
+  .logo
+    width: 153px
+    height: 35px
+    background-size: 100%
+
+
+@media (max-width: 450px)  
+  .itemDiv_header 
+    font-size: 36px
+  .itemDiv_p 
+    font-size: 12px
+  .circle 
+    width: 200px
+    height: 200px
+    margin-left: -100px
+  .itemDiv_header 
+    margin-top: 27px
+    margin-bottom: 0
+  .bg 
+    height: 75px
+  header 
+    padding-bottom: 75px
+  .circle
+    top: 11%
+  .itemDiv_p
+    width: 280px
+    line-height: 1.5
+  .owl-nav
+    display: none
+  .itemDiv 
+    min-height: 0px
+  .owl-carousel .owl-stage-outer 
+    margin-bottom: -50px
+  .owl-carousel 
+    margin-bottom: 26px
+  .slider 
+      height: 290px
+      background-size: cover
+  
+  .textBlock_image 
+    display: none
+  .textBlock_text_header 
+    font-size: 24px
+    text-transform: uppercase
+  .textBlock_text_paragraph 
+    font-size: 12px
+  .textBlock 
+    padding-top: 30px
+    padding-bottom: 36px
+    background-size: cover
+  .textBlock_text_header 
+    margin-bottom: 30px
+
+  .accordion_header 
+    font-size: 24px
+  .ac-container_text
+    font-size: 16px
+    font-weight: 900
+    top: 15%
+  .ac-container_button 
+    width: 26px
+    height: 26px
+    top: 45px
+    &:before
+      width: 15px
+      height: 4px
+      top: 12px
+      left: 6px
+    &:after
+      width: 4px
+      height: 15px
+      top: 2px
+      left: 11px
+  .accordion_header 
+    padding-top: 28px
+    margin-bottom: 50px
+  .ac-container label 
+    height: 85px
+  
+@media (max-width: 450px)  
+  .ac-container .ac-container_input5
+    height: 50px
+  #superid
+    top: 14px
+  .ac-container 
+    padding-bottom: 30px
+  .accordion
+    min-height: 0px
+  .ac-container
+    &_spanValue
+      font-size: 14px
+    &_spanLeft
+      font-size: 14px
+    &_spanRight
+      font-size: 14px
+    &_content
+      margin-top: -9px
+      margin-bottom: 150px
+  .ac-container_Spans
+    display: block
+    margin: 0
+    left: 10%
+    display: inline-block
+  .ac-container_spanValue
+    padding-top: 6px
+  .ac-container_spanRight
+    padding-top: 50px
+  .slider_ac
+    font-size: 14px
+  .slider_a
+    font-size: 14px
+  .slider_button::after
+      width: 165px
+      height: 6px
+      top: -17px
+  .ac-button 
+    margin-left: 7px
+    position: relative
+    top: 75px
+  .ac-button::after 
+    width: 162px
+    top: -17px
+    height: 6px
+    margin-left: -9px
+
+@media (max-width: 450px)   
+  .request
+    background: $main-color
+    min-height: 0
+  .request_header 
+    margin-bottom: 0
+  .request_form 
+    padding-left: 0
+    padding-right: 0
+    padding-top: 19px
+  .request_button
+    margin-top: 40px
+  .form__input, .form__select 
+    width: 100%
+  .contactsContainer 
+    flex-direction: column-reverse
+  .contactsMap
+    margin-left: -5px
+    max-height: 200px
+  #map>ymaps>ymaps
+    height: 250px !important
+    width: 320px !important
+  .contactsText
+    padding-left: 40px
+    &_header 
+      text-align: center
+  .footer>.container>.bg>.logo
+    display: none
+  .bg>.socials_bottom
+    display: none
+  .footer_copyright 
+    text-align: center
+  .footer
+    min-height: 0
+    font-size: 12px
+  .contactsText_value
+    font-size: 14px
+  .bg
+    display: inline-flex
+    padding-left: 35px
+  .menu
+    top: 75px !important
+    width: 262% !important
+  .menu li 
+    font-size: 18px !important
+    height: 50px !important
+  .socials 
+    transform: scale(0.8)
+    margin-left: -70px
+  .contactsText_item 
+    margin-top: 30px
+    margin-bottom: 30px

@@ -50,6 +50,7 @@ $.validator.addMethod('js-input-phone', function(value, element){
 // 	appearance: none
 // });
 
+//яндекс карта
 ymaps.ready(init);
 function init(){
     var map = document.querySelector('#map');
@@ -86,12 +87,13 @@ function init(){
 }
 
 
+//смена цвета хедера
 $(window).scroll(function(){
     // console.log($(this).scrollTop());
     var header = document.querySelector(".wrapper");
     var fb = document.querySelector(".fb");
     var vk = document.querySelector(".vk");
-    if($(this).scrollTop()>900) {
+    if($(this).scrollTop()>$('.wrapper').height()+300) {
       header.classList.add("wrapper2");
       fb.classList.add("fb2");
       vk.classList.add("vk2");
