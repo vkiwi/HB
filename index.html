@@ -91,7 +91,7 @@
 
       </div>
       <div class="slider_button">
-        <a class="slider_a" href="">оставить заявку</a>
+        <button id="button" class="slider_a" href="">оставить заявку</button>
       </div>
     </div>
 
@@ -339,6 +339,31 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- модальное окно -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog modal-dialog__request">
+        <button class="modal-dialog__close" id="close"></button>
+
+        <!-- <div class="request modal-dialog__request"> -->
+        <h2 class="request__header">авторизация </h2>
+        <form action="mail.php" method="POST" id="brif-form-modal">
+          <div class="brif-form">
+            <span class="modalSpan form__label">Логин:</span>
+            <input type="text" name="user_name" class="form__input brif-input" placeholder="Введите логин">
+          </div>
+          <div class="brif-form">
+            <span class="modalSpan form__label">Пароль</span>
+            <input type="tel" name="user_phone" class="form__input brif-input phone" placeholder="Введите пароль">
+          </div>
+          <div class="slider_button slider_buttonModal">
+            <button id="button" class="slider_a" href="">отправить</button>
+          </div>
+        </form>
+        <!-- </div> -->
+      </div>
+      <!-- /.modal-dialog -->
     </div>
 
   </main>

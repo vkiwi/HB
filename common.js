@@ -106,5 +106,21 @@ $(window).scroll(function(){
     });
 
 
+      var button = $('#button');
+      var modal = $('#modal');
+      var close = $('#close');
+    
+      button.on('click', function(){
+        modal.addClass('modal_active');
+        document.body.classList.add('notOverflow');
+      });
+    
+      close.on('click', function(){
+        modal.removeClass('modal_active');
+        document.body.classList.remove('notOverflow');
+      });
+    
+
+    
 
 });
