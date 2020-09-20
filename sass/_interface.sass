@@ -33,6 +33,7 @@ header
 .socials
   display: flex
   align-items: baseline
+  padding-bottom: 15px
 
 .fb 
   width: 15px
@@ -60,12 +61,13 @@ header
 .nav 
   color: $text-color
   font-size: 18px
-  font-family: UniNeueBold
+  font-family: UniNeueHeavy
+  font-weight: bold
 
 .separator 
   // margin-right: 27px
   // margin-left: 22px
-  font-family: UniNeueBlack
+  font-family: UniNeueHeavy
   color: $text-color
 
 .wrapper 
@@ -90,16 +92,39 @@ a.item
 
 @font-face 
   font-family: 'UniNeueRegular'
-  src: url("../fonts/UniNeueRegular.ttf")
+  src: url("../fonts/UniNeueBlack.ttf")
+  font-weight: 900
+  font-style: normal
 
 @font-face 
   font-family: 'UniNeueBold'
   src: url("../fonts/UniNeueBold.ttf")
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'UniNeueHeavy'
+  src: url("../fonts/UniNeueHeavy.ttf")
+  font-weight: 900
+  font-style: normal
 
 @font-face 
   font-family: 'UniNeueBlack'
   src: url("../fonts/UniNeueBlack.ttf")
+  font-weight: normal
+  font-style: normal
 
+@font-face 
+  font-family: 'UniNeueThin'
+  src: url("../fonts/UniNeueThin.ttf")
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'UniNeueBook'
+  src: url("../fonts/UniNeueBook.ttf")
+  font-weight: normal
+  font-style: normal
 
 /*блок карусель */
 .slider 
@@ -109,7 +134,8 @@ a.item
   text-align: center
   text-transform: uppercase
   &_a
-    font-family: UniNeueRegular
+    font-family: UniNeueHeavy
+    font-weight: bold
     font-size: 24px
     font-weight: 900
     font-stretch: normal
@@ -124,24 +150,24 @@ a.item
     letter-spacing: 2.2px
     text-transform: uppercase
     z-index: 2
-    // &:hover
-    //   font-size: 28px
+ 
 .slider_button
-  width: 265px
+  width: 270px
   margin-left: auto
   margin-right: auto
   height: 0px
+  margin-top: 20px
 .slider_button:after
   content: ""
   display: block
-  width: 259px
+  width: 260px
   height: 10px
   opacity: 0.5
   background-color: $main-color
   margin-left: auto
   margin-right: auto
   position: relative
-  top: -28px 
+  top: -29px 
 
 .slider_button:hover
   transform: scale(1.1)
@@ -154,12 +180,13 @@ a.item
     font-weight: 900
     color: $text-color
     margin-top: 175px
-    margin-bottom: 60px
+    margin-bottom: 40px
+    font-family: UniNeueHeavy
   &_p
     line-height: 2.4
     letter-spacing: 1px
     font-size: 20px
-    font-family: UniNeueRegular
+    font-family: UniNeueHeavy
     font-weight: 900
 
 .circle
@@ -179,16 +206,16 @@ a.item
   margin-left: auto
   margin-right: auto
   text-align: center
-  font-family: UniNeueRegular
+  font-family: UniNeueBold
 
 .owl-dot
-  outline: none
+  outline: nonef
 .owl-carousel
-  margin-bottom: 50px
+  margin-bottom: 40px
 .owl-nav
   position: absolute
   left: 0px
-  top: 59%
+  top: 56%
   width: 100%
   height: 50px
   font-weight: bold
@@ -198,7 +225,7 @@ a.item
 
 .owl-prev
   position: absolute
-  left: 20%
+  left: 18%
   outline: none
   background: url(../images/arrow-left.png) !important
   width: 115px
@@ -207,7 +234,7 @@ a.item
   display: none
 .owl-next
   position: absolute
-  right: 20%
+  right: 19%
   outline: none
   background: url(../images/arrow-right.png) !important
   width: 115px
@@ -217,11 +244,11 @@ a.item
 
 //блок текста
 .textBlock
-  height: 715px
+  height: 570px
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/guitar.png")
   color: $text-color
   margin-top: 3px
-  padding-top: 200px
+  padding-top: 145px
   background-position: bottom
   background-size: 100%
   &_container
@@ -230,10 +257,12 @@ a.item
   &_text
     width: 696px
     text-align: left
-    font-family: UniNeueRegular
+    font-family: UniNeueHeavy
     padding-left: 20px
     &_header
       font-size: 48px
+      text-transform: uppercase
+      margin-bottom: 61px
     &_paragraph
       font-size: 24px
       text-transform: none
@@ -241,7 +270,8 @@ a.item
     width: 263px
     height: 371px
     background-image: url(../images/ch.png)
-    padding-right: 80px
+    // padding-right: 80px
+    padding-top: 106px
     background-position: center
     background-repeat: no-repeat
 
@@ -250,26 +280,28 @@ a.item
   min-height: 1149px
   background-color: $background-color
   margin-top: 3px
-  font-family: UniNeueRegular
+  font-family: UniNeueBold
   &_header
-    font-family: UniNeueRegular
+    font-family: UniNeueHeavy
     font-size: 60px
     font-weight: 900
     color: $text-color
     text-align: center
-    padding-top: 72px
+    padding-top: 50px
     margin-top: 0
     text-transform: uppercase
 
 .ac:checked + .ac-container_button:after
   display: none 
 
-
-
 .ac-container
   max-width: 1140px
   margin: 10px auto 30px auto
   padding-bottom: 87px
+  &_Spans
+    font-family: UniNeueBold
+  &_spanValue
+    font-family: UniNeueBook
   &_input
     position: relative
   &_button
@@ -280,7 +312,7 @@ a.item
     margin-top: -60px
     position: relative
     top: 98px
-    left: 23px
+    left: 36px
     z-index: 19
     &:hover
       background-color: $text-color
@@ -314,7 +346,7 @@ a.item
   &_content
     color: $text-color
     font-weight: 900
-    font-family: UniNeueRegular
+    font-family: UniNeueBold
     margin-top: 45px
   &_spanLeft, &_spanRight
     font-size: 24px
@@ -343,7 +375,7 @@ div.ac-container_button:hover
   position: relative
   z-index: 20
   display: block
-  height: 121px
+  height: 114px
   cursor: pointer
   color: $text-color
   //text-shadow: 1px 1px 1px rgba(255,255,255,0.8)
@@ -391,18 +423,18 @@ div.ac-container_button:hover
   height: 0px
   position: relative
   z-index: 10
-  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // transition: height 0.3s ease-in-out, box-shadow 0.6s linear
 
 .ac-container input:checked ~ article 
-  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear
+  // transition: height 0.3s ease-in-out, box-shadow 0.6s linear
   box-shadow: 0px 1px 0px 1px $main-color
   height: auto
 
@@ -420,6 +452,7 @@ div.ac-container_button:hover
 
 .ac-container_input
   margin-top: 2px
+  font-family: UniNeueBook
 
 .ac-container
   max-width: 1140px
@@ -440,9 +473,9 @@ div.ac-container_button:hover
   &_content
     color: $text-color
     font-weight: 900
-    font-family: UniNeueRegular
-    margin-top: 45px
-    margin-bottom: 64px
+    font-family: UniNeueBold
+    margin-top: 14px
+    margin-bottom: 94px
   &_spanLeft, &_spanRight
     font-size: 24px
     font-weight: 900
@@ -451,19 +484,15 @@ div.ac-container_button:hover
     margin-left: 10%
   &_spanRight
     position: absolute
-    left: 50%
+    left: 46%
   &_spanBottom
     display: inline-block
-    margin-top: 55px
-    margin-bottom: 57px
+    margin-top: 35px
+    margin-bottom: 37px
   &_spanValue
     text-transform: none
     font-weight: 100
     font-size: 30px
-
-// .ac-button
-//   margin-left: 12%
-
 
 .ac-container_input5
   box-shadow: 0px 0px 0px 1px #6bc9bd !important
@@ -476,15 +505,15 @@ div.ac-container_button:hover
 //блок оставьте заявку
 .request
   background: url("../images/concert.png")
-  min-height: 1041px
+  min-height: 1037px
   margin-top: 3px
   background-position: right bottom
   background-size: 130%
   color: $text-color
   font-size: 18px
-  font-family: UniNeueRegular
+  font-family: UniNeueBold
   &_header
-    padding-top: 50px
+    padding-top: 35px
     margin-bottom: 0px
     padding-bottom: 30px
   &_form
@@ -493,15 +522,15 @@ div.ac-container_button:hover
     background-color: $background-color
     margin-left: auto
     margin-right: auto
-    padding-top: 42px
-    padding-left: 68px
+    padding-top: 22px
+    padding-left: 66px
     padding-right: 66px
     box-sizing: border-box
-
+    border: 1px solid $main-color
 .form
   &__input, &__select
     width: 418px
-    height: 46px
+    height: 43px
     border: solid 1px $text-color
     background-color: $background-color
     padding-left: 23px
@@ -528,7 +557,6 @@ div.ac-container_button:hover
     margin-right: auto
     margin-top: 50px
     position: relative
-
     &s
       text-align: center
   &__line
@@ -536,7 +564,7 @@ div.ac-container_button:hover
     top: 74px
 
 .form__field 
-  margin: 10px
+  margin: 15px 10px
   position: relative
 
 .form__area 
@@ -570,6 +598,8 @@ input.error
   display: block
   padding-top: 2px
   padding-bottom: 2px
+  &:hover
+    cursor: pointer
 
 .form__checkbox-label::before 
   content: ''
@@ -608,14 +638,14 @@ input.error
     color: $text-color
     font-size: 48px
     text-align: left
-    padding-top: 80px
+    padding-top: 61px
     margin-top: 0
+    margin-bottom: 47px
 
 .contactsText
   &_item
     text-align: left
-    margin-top: 45px
-    margin-bottom: 45px
+    margin-top: 36px
   &_value
     font-size: 18px
     vertical-align: super
@@ -637,19 +667,22 @@ input.error
 .footer
   min-height: 127px
   background-color: $main-color
+  margin-top: -40px
   &_copyright
     font-style: 18px
     color: $text-color
     text-transform: none
 
-
 .form__select
   background: url(../images/arrow-bottom.png)
   background-color: $background-color
-  background-position: right
+  background-position: 97%
   background-repeat: no-repeat
-  background-size: contain
+  background-size: 9%
   appearance: none
+
+select > option
+  height: 30px !important
 
 .form_radio
   display: inline
@@ -697,19 +730,6 @@ input.error
     width: 497px
     margin-right: -24px
 
-
-@media (max-width: 768px)
-  .socials
-    display: none
-  .socialsBurger
-    display: flex
-    align-items: flex-end
-    margin-left: 21px
-  .footer_copyright
-    text-align: right
-  .footer_secondSpan
-    display: block
-
 @media (min-width: 768px)
   .socialsBurger
     display: none
@@ -717,11 +737,9 @@ input.error
 .socials_bottom
   display: none
 
-@media (max-width: 768px)
+@media (max-width: 1000px)
   .socials_bottom
     display: flex
-
-@media (max-width: 768px)
   .textBlock
     height: auto
     padding-top: 78px
@@ -730,7 +748,7 @@ input.error
     font-size: 72px
   .itemDiv_p 
     font-size: 16px
-    width: 79%
+    width: 83%
     margin-left: auto
     margin-right: auto
   .owl-prev 
@@ -743,12 +761,6 @@ input.error
     width: 97%
   .nav
     margin-right: 40px
-
-@media (max-width: 717px)
-  .separator
-    display: none
-  
-@media (max-width: 768px)
   .ac-container
     margin-right: 20px
     margin-left: 20px
@@ -757,15 +769,26 @@ input.error
     width: 250px
   .request
     background-size: cover
+  .socials
+    display: none
+  .socialsBurger
+    // display: flex
+    align-items: flex-end
+    margin-left: 21px
+  .footer_copyright
+    text-align: right
+  .footer_secondSpan
+    display: block
 
-@media (max-width: 320px)
+@media (max-width: 767px)
+  .separator
+    display: none
+  
+@media (max-width: 767px)
   .logo
     width: 153px
     height: 35px
     background-size: 100%
-
-
-@media (max-width: 450px)  
   .itemDiv_header 
     font-size: 36px
   .itemDiv_p 
@@ -789,7 +812,7 @@ input.error
   .owl-nav
     display: none
   .itemDiv 
-    min-height: 0px
+    min-height: 224px
   .owl-carousel .owl-stage-outer 
     margin-bottom: -50px
   .owl-carousel 
@@ -837,8 +860,6 @@ input.error
     margin-bottom: 50px
   .ac-container label 
     height: 85px
-  
-@media (max-width: 450px)  
   .ac-container .ac-container_input5
     height: 50px
   #superid
@@ -883,8 +904,6 @@ input.error
     top: -17px
     height: 6px
     margin-left: -9px
-
-@media (max-width: 450px)   
   .request
     background: $main-color
     min-height: 0
@@ -898,6 +917,8 @@ input.error
     margin-top: 40px
   .form__input, .form__select 
     width: 100%
+  .new-select
+    width: 100% !important
   .contactsContainer 
     flex-direction: column-reverse
   .contactsMap
@@ -905,7 +926,7 @@ input.error
     max-height: 200px
   #map>ymaps>ymaps
     height: 250px !important
-    width: 320px !important
+    // width: 320px !important
   .contactsText
     padding-left: 40px
     &_header 
@@ -937,6 +958,38 @@ input.error
     margin-top: 30px
     margin-bottom: 30px
 
-
 .owl-theme .owl-nav 
-    margin-top: -10px !important
+  margin-top: -10px !important
+
+.owl-theme .owl-dots .owl-dot span 
+  width: 15px !important
+  height: 15px !important
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+  max-width: 85px
+
+@media (max-width: 1672px) 
+  .owl-prev 
+    left: 0
+  .owl-next 
+    right: 0
+
+#map>ymaps>ymaps
+  width: 707px !important
+  height: 460px !important
+
+@media (max-width: 768px)
+  .wrapper
+    width: auto
+  .menu li a 
+    padding-left: 25px !important
+  .textBlock_image 
+    width: 400px
+  .ac-container_button 
+    left: 16px
+
+@media (max-width: 767px)
+  #map>ymaps>ymaps
+    height: 250px !important
+  .contacts 
+    min-height: 590px

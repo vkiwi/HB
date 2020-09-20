@@ -6,16 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="Путь-до-папки-со-стилями/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/selectOption.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
   <link rel="stylesheet" href="css/burger.css">
 	<script src="burger.js"></script>
-
+  
 </head>
 
 <body>
@@ -251,10 +254,11 @@
           </div>
           <div class="form__field">
             <span class="form__label">Выберите предложение:</span>
-            <select name="option" class="form__select">
+            <select name="option" class="select form__select">
+              <option value="Предложение 0">Предложение 0</option>
               <option value="Предложение 1">Предложение 1</option>
               <option value="Предложение 2">Предложение 2</option>
-              <option value="Предложение 3">Предложение 3</option>
+              <option selected="selected" value="Предложение 3">Предложение 3</option>
             </select>
           </div>
           <div class="form__field">
@@ -287,7 +291,7 @@
 
           <div class="form__buttons">
             <div class="slider_button request_button">
-              <a class="slider_a" href="">оставить заявку</a>
+              <button class="slider_a" href="">оставить заявку</button>
             </div>
           </div>
 
@@ -319,9 +323,7 @@
           <div id="map" class="map" data-center="55.75461883794179,37.622843831904376"
             data-placemark="55.754110599981814,37.62496814144418"></div>
 
-          <script src="https://api-maps.yandex.ru/2.1/?apikey=484226fe-5351-4e53-86c9-593e50b5a72e&lang=ru_RU"
-            type="text/javascript">
-          </script>
+
         </div>
       </div>
     </div>
@@ -375,6 +377,10 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=484226fe-5351-4e53-86c9-593e50b5a72e&lang=ru_RU"
+  type="text/javascript">
+</script>
+<script src="js/ymaps-touch-scroll.js"></script>
   <script src="common.js"></script>
 
   <script>
@@ -387,7 +393,7 @@
     });
   </script>
 
-  <!-- смена +/- при раскрытии аккордеона ... :)  -->
+  <!-- смена +/- при раскрытии аккордеона 
   <script>
     function imgchange(obj) {
       console.log(obj);
@@ -397,7 +403,7 @@
         obj.src = "images/-.png"
       }
     }
-  </script>
+  </script> -->
 
 </body>
 

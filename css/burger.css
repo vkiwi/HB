@@ -32,10 +32,10 @@ list-style: none;
 
 .menu li a {
 display: inline-block;
-padding: 10px 15px;
+padding: 10px 35px;
 text-decoration: none;
 color: white;
-
+font-family: UniNeueBold;
 }
 
 .menuBurger {
@@ -48,7 +48,7 @@ cursor: pointer;
   display: none;
 }
 
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 767px) {
   .menu {
   display: none; /* пункты меню скрыты */
   background: #f1f2f4;
@@ -74,4 +74,9 @@ cursor: pointer;
 #menuCSS:checked + .menu {
   display: block;
 }
+}
+
+@font-face {
+  font-family: 'UniNeueBold';
+  src: url("../fonts/UniNeueBold.ttf");
 }
